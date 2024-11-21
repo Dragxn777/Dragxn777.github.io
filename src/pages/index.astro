@@ -1,0 +1,45 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <img src="head.png" alt="" class="absolute -top-10 -z-10" />
+
+    <main
+      class="h-screen w-full relative flex flex-col items-center gap-20 justify-center overflow-x-hidden overflow-y-hidden mt-0 mb-0"
+    >
+      <div>
+        <h1 class="h-1 text-white uppercase mt-20">Portfolio</h1>
+      </div>
+      <div class="flex flex-col items-center md:flex-row mb-36">
+        <img
+          src="/sun.png"
+          alt=""
+          class="absolute scale-75 -z-30 top-0 md:left-24 -top-10"
+        />
+
+        <img src="/LogoDT.png" class="w-[200px]" />
+
+        <div>
+          <h2
+            class="leading-none font-bold uppercase text-white tracking-[0.1em]"
+          >
+            Dragan
+          </h2>
+          <h2 class="text-white indent-20">Turk</h2>
+        </div>
+      </div>
+      <img src="/bottomland.png" alt="" class="absolute bottom-0 -z-20" />
+    </main>
+
+    <main class="bg-main p-10"></main>
+  </body>
+</html>
