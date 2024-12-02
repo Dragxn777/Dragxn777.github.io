@@ -5,6 +5,10 @@ export default {
 		extend: {
 			"main": "#2d2b28",
 		},
+
+		backgroundImage: {
+			"realmd": "url('/bg-real-md.png')",
+		},
 	},
 	plugins: [],
 }
